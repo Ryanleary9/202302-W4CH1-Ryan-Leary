@@ -25,7 +25,7 @@ export const InfoList = [
     status: "Alive",
     profession: "Java developer",
     twitter: "@julius_churchs",
-    picture: "<img src="" alt="" />julio.jpg",
+    picture: "img/julio.jpg",
     alternativeText: "Churchs pointing at you",
     selected: true,
   },
