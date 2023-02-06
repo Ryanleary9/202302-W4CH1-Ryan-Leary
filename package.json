@@ -18,6 +18,7 @@
     "husky": "^8.0.0"
   },
   "scripts": {
+    "test:prod": "jest --watchAll --coverage --watchAll=false",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
