@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Info } from "./components/info/info";
+import { Gentleman } from "./components/gentleman/gentleman";
+import { InfoList } from "./mocks/mocklist";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Info></Info>
+      <main className="main">
+        <ul className="gentlemen">
+          {InfoList.map((item) => (
+            <Gentleman
+              alternativeText={item.alternativeText}
+              status={item.status}
+              id={item.id}
+              name={item.name}
+              picture={item.picture}
+              profession={item.profession}
+              twitter={item.twitter}
+              selected={item.selected}
+            ></Gentleman>
+          ))}
+        </ul>
+      </main>
+    </>
   );
 }
 
