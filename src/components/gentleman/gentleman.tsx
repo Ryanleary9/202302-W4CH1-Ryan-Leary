@@ -1,5 +1,4 @@
 import { GentlemanType } from "../models/gentleman_type";
-import { InfoList } from "../../mocks/mocklist";
 
 export function Gentleman({
   id,
