@@ -10,6 +10,8 @@ test("renders learn react link", () => {
       twitter={""}
       picture={""}
       alternativeText={""}
+      id={0}
+      selected={false}
     />
   );
   const linkElement = screen.getByText(/Profession/);
