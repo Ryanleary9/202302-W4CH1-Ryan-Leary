@@ -1,4 +1,6 @@
-export const InfoList = [
+import { GentlemanType } from "../components/models/gentleman_type";
+
+export const InfoList: GentlemanType[] = [
   {
     id: 1,
     name: "Bertin Osborne",
